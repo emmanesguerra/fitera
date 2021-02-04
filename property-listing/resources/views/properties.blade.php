@@ -26,61 +26,14 @@
                 <h3>Top searches</h3>
 
                 <div class="wrap">
+                    @for($i = 0; $i < 8; $i++)
                     <section class='my-4'>
                         <img src="{{ asset('img/cubao.jpg') }}" />
                         <span class="loc">Cubao Station</span>
                         <span class="title">Walkway</span>
                         <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
                     </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
-
-                    <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
-                        <span class="loc">Cubao Station</span>
-                        <span class="title">Walkway</span>
-                        <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>
-                    </section>
+                    @endfor
                 </div>
 
                 <div class='text-center'>

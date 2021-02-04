@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/properties/{url?}', 'Properties@index');
+Route::get('/properties/{url?}/{pick?}', 'Properties@index');

@@ -31,7 +31,8 @@
                 @endif
                 
                 <plists v-bind:data="this.model" 
-                        v-bind:counter="this.listcounter"/>
+                        v-bind:counter="this.listcounter"
+                         v-bind:initialcnt="{{ $count }}"/>
             </div>
         </div>
     </div>

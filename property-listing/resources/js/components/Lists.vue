@@ -12,7 +12,7 @@
                 <span class="details">Details: {{ data.vicinity }}</span>
             </div>
             <div class="col-3 px-0 py-5 text-center">
-                <a href="" class="btn btn-primary col-10 my-5">VIEW PROPERTY</a>
+                <a v-bind:href="url" class="btn btn-primary col-10 my-5">VIEW PROPERTY</a>
             </div>
         </section>
     </div>
@@ -21,10 +21,17 @@
 <script>
 
     export default {
-        props: ['data', 'counter'],
+        props: ['data', 'counter', 'initialcnt'],
         computed: {
             imgpath() {
                 return '/img/' + this.data.img;
+            },
+            url () {
+                if(this.initialcnt == 5) {
+                    return '/properties/digital-billboards/' + this.data.url;
+                } else {
+                    return '/properties/traditional-billboards/' + this.data.url;
+                }
             }
         },
     }

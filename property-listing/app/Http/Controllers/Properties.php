@@ -10,20 +10,47 @@ class Properties extends Controller
     CONST TRADITIONAL_BILLBOARD = 3;
     
     //
-    public function index($request = null)
-    {
+    public function index($request = null, $pick = null)
+    {   
         $bselect = false;
         $tselect = false;
+        $initialCount = 0;
         if(!empty($request) && $request != '#') {
             if($request == 'digital-billboards') {
                 $bselect = true;
+                $initialCount = self::DIGITAL_BILLBOARD;
             } else if ($request == 'traditional-billboards') {
                 $tselect = true;
+                $initialCount = self::TRADITIONAL_BILLBOARD;
             }
         }
         
-        //data
-        $categories = (object) [
+        if(!empty($pick)) {
+            return $this->DisplayViewPage($initialCount);
+        }
+        
+        $categories = $this->Model($bselect, $tselect);
+        
+        if(!empty($request) && $request != '#') {
+            return $this->DisplayBillboards($initialCount, $categories);
+        }
+        
+        return view('properties')->with(['data' => $categories]);
+    }
+    
+    private function DisplayBillboards(int $count , $categories) 
+    {
+        return view('property-list')->with(['count' => $count, 'data' => $categories]);
+    }
+    
+    private function DisplayViewPage(int $count) 
+    {
+        return view('property')->with(['count' => $count]);
+    }
+    
+    private function Model ($bselect, $tselect) 
+    {
+        return (object) [
             [
                 'id' => '1',
                 'url' => 'digital-billboards',
@@ -95,20 +122,5 @@ class Properties extends Controller
                 'selected' => false,
             ],
         ];
-        
-        if(!empty($request) && $request != '#') {
-            if($request == 'digital-billboards') {
-                return $this->DisplayBillboards(self::DIGITAL_BILLBOARD, $categories);
-            } else if ($request == 'traditional-billboards') {
-                return $this->DisplayBillboards(self::TRADITIONAL_BILLBOARD, $categories);
-            }
-        }
-        
-        return view('properties')->with(['data' => $categories]);
-    }
-    
-    private function DisplayBillboards(int $count , $categories) 
-    {
-        return view('property-list')->with(['count' => $count, 'data' => $categories]);
     }
 }
