@@ -15,3 +15,89 @@
 @import 'searchblk';
 @import 'topsearch';
 @import 'advertisewus';
+
+#app {
+    background: #fff;
+
+    .breadcrumb {
+        background: #fff;
+
+        li {
+            font-size: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            a {
+                color: #aeaeae;
+            }
+        }
+    }
+    
+    .filterblk {
+        
+        padding-bottom: 50px;
+        
+        h6 {
+            font-size: 12px;
+        }
+        
+        label {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        section {
+            border-bottom: 1px solid #ccc;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            margin-top: 15px;
+            
+            &.btn-dark {
+                margin-top: 5px;
+                background: #ccc;
+                border-color: #ccc;
+            }
+        }
+    }
+    
+    .lists {
+        
+        section {
+            margin-top: 40px;
+            border: 1px solid #ccc;
+            
+            span {
+                float: left;
+                width: 100%;
+            }
+            
+            .loc {
+                color: orange;
+                font-size: 9px;
+            }
+            
+            .title {
+                font-weight: bold;
+            }
+            
+            .size {
+                font-size: 11px;
+            }
+            
+            .details {
+                font-size: 11px;
+                
+                &:nth-child(2n) {
+                    margin-bottom: 30px;
+                }
+            }
+            
+            .btn {
+                background: #00b8ff;
+                border-radius: 3px;
+            }
+        }
+    }
+}
