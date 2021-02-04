@@ -46,6 +46,13 @@ and open the template in the editor.
                 border-radius: 3px;
             }   
             
+            &.active {
+                
+                a {
+                    color: #00b8ff;
+                }
+            }
+            
             a {
                 color: #b8b8b8;
                 text-decoration: none;

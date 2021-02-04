@@ -15,7 +15,7 @@
             </div>
 
             <div class="col-3 py-5 my-5">
-                <button class="btn btn-danger my-5">REACH YOUR AUDIENCE NOW!</button>
+                <button class="btn btn-danger py-3 my-5">REACH YOUR AUDIENCE NOW!</button>
             </div>
 
         </div>
