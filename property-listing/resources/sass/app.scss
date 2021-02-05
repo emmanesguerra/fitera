@@ -32,28 +32,28 @@
             }
         }
     }
-    
+
     .filterblk {
-        
+
         padding-bottom: 50px;
-        
+
         h6 {
             font-size: 12px;
         }
-        
+
         label {
             font-size: 12px;
             color: #666;
         }
-        
+
         section {
             border-bottom: 1px solid #ccc;
             margin-top: 15px;
         }
-        
+
         .btn {
             margin-top: 15px;
-            
+
             &.btn-dark {
                 margin-top: 5px;
                 background: #ccc;
@@ -61,43 +61,148 @@
             }
         }
     }
-    
+
     .lists {
-        
+
         section {
             margin-top: 40px;
             border: 1px solid #ccc;
-            
+
             span {
                 float: left;
                 width: 100%;
             }
-            
+
             .loc {
                 color: orange;
                 font-size: 9px;
             }
-            
+
             .title {
                 font-weight: bold;
             }
-            
+
             .size {
                 font-size: 11px;
             }
-            
+
             .details {
                 font-size: 11px;
-                
+
                 &:nth-child(2n) {
                     margin-bottom: 30px;
                 }
             }
-            
+
             .btn {
                 background: #00b8ff;
                 border-radius: 3px;
             }
         }
+    }
+
+    .pdetails {
+
+
+        span {
+            float: left;
+            width: 100%;
+        }
+
+        .loc {
+            color: orange;
+            font-size: 12px;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        .size {
+            font-size: 12px;
+        }
+
+        .details {
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+
+        img {
+            display: block;
+            cursor: pointer;
+        }
+
+        .btn {
+            width: 200px;
+            margin-top: 18px;
+            background: #00b8ff;
+            border-color: #00b8ff;
+            border-radius: 3px;
+        }
+    }
+
+    .thumb {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        img {
+            width: 124px;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(241 241 241); /* Fallback color */
+    background-color: rgb(241 241 241 / 90%);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.clx {
+    position: absolute;
+    top: 95px;
+    right: 35px;
+    z-index: 5;
+    width: 50px;
+    transition: 0.3s;
+    opacity: 1;
+    
+    &:hover,
+    &:focus {
+        cursor: pointer;
     }
 }

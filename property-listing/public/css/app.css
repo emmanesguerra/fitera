@@ -11440,3 +11440,131 @@ and open the template in the editor.
   border-radius: 3px;
 }
 
+#app .pdetails span {
+  float: left;
+  width: 100%;
+}
+
+#app .pdetails .loc {
+  color: orange;
+  font-size: 12px;
+}
+
+#app .pdetails .title {
+  font-weight: bold;
+}
+
+#app .pdetails .size {
+  font-size: 12px;
+}
+
+#app .pdetails .details {
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+#app .pdetails img {
+  display: block;
+  cursor: pointer;
+}
+
+#app .pdetails .btn {
+  width: 200px;
+  margin-top: 18px;
+  background: #00b8ff;
+  border-color: #00b8ff;
+  border-radius: 3px;
+}
+
+#app .thumb {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#app .thumb img {
+  width: 124px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#app .thumb img:last-child {
+  margin-right: 0;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #f1f1f1;
+  /* Fallback color */
+  background-color: rgba(241, 241, 241, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+
+.clx {
+  position: absolute;
+  top: 95px;
+  right: 35px;
+  z-index: 5;
+  width: 50px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.clx:hover,
+.clx:focus {
+  cursor: pointer;
+}
+
