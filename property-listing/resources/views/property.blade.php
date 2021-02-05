@@ -20,12 +20,12 @@
 
 
             <div class='col-6 mt-2 mb-5'>
-                <img src='{{ asset('img/cubao.jpg') }}' class="img-fluid" style='cursor: pointer;' onclick="display(this)" />
+                <img src='{{ asset('img/cubao.jpg') }}' class="img-fluid" style='cursor: pointer;' onclick="display(this)"  alt='Cubao Station' title='Cubao Station'/>
                 <div class='thumb'>
-                    <img src='{{ asset('img/cubao.jpg') }}' class="" onclick="display(this)" />
-                    <img src='{{ asset('img/edsa-station-pasay.jpg') }}' class="" onclick="display(this)" />
-                    <img src='{{ asset('img/edsa-traffic-ber-months-situation-1566985698.jpg') }}' class="" onclick="display(this)" />
-                    <img src='{{ asset('img/the-historic-edsa.jpeg') }}' class="" onclick="display(this)" />
+                    <img src='{{ asset('img/cubao.jpg') }}' class="" onclick="display(this)"   alt='Cubao Station' title='Cubao Station'/>
+                    <img src='{{ asset('img/edsa-station-pasay.jpg') }}' class="" onclick="display(this)"  alt='Pasay Station' title='Pasay Station' />
+                    <img src='{{ asset('img/edsa-traffic-ber-months-situation-1566985698.jpg') }}' class="" onclick="display(this)" alt='EDSA' title='EDSA' />
+                    <img src='{{ asset('img/the-historic-edsa.jpeg') }}' class="" onclick="display(this)" alt='EDSA' title='EDSA' />
                 </div>
             </div>
             <div class='col-6 pdetails px-5 mt-2 mb-5'>
@@ -36,7 +36,7 @@
                 <span class="details">INFO: Positioned on ighly visible, heavy traffic locations succh as expressways and major roadways.</span>
                 <span class="details">ADDRESS: North Avenue corner EDSA, Barangay Bagong Pag-asa, Quezon City</span>
 
-                <img src='{{ asset('img/north-edsa-map.jpg') }}' class='img-thumbnail' width="300" onclick="display(this)"/>
+                <img src='{{ asset('img/north-edsa-map.jpg') }}' class='img-thumbnail' width="300" onclick="display(this)" alt='map' title='map' />
 
                 <button class='btn btn-primary'>BOOK NOW!</button>
             </div>
@@ -47,7 +47,7 @@
 
 <div id="myModal" class="modal">
     <img src='{{ asset('img/close.png') }}' id='clx' class='clx'>
-    <img class="modal-content" id="img01">       
+    <img class="modal-content" id="img01" alt='focus' title='focus' >       
 </div>
 
 <div class="topsearch">
@@ -59,7 +59,7 @@
                 <div class="wrap">
                     @for($i = 0; $i < 8; $i++)
                     <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
+                        <img src="{{ asset('img/cubao.jpg') }}" alt='Cubao Station' title='Cubao Station'/>
                         <span class="loc">Cubao Station</span>
                         <span class="title">Walkway</span>
                         <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>

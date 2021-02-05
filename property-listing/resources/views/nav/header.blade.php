@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Fitera Practical Exam</title>
+        <meta name="description" content="Fitera Practical Exam">
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>

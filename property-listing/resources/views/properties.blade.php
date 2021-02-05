@@ -13,7 +13,7 @@
                 </ul>
             </div>
             <div class='img-cont col-9'>
-                <img src='{{ asset('img/advertisebanner.jpg') }}' class='img-fluid' />
+                <img src='{{ asset('img/advertisebanner.jpg') }}' class='img-fluid' alt='Advertise with us' title='Advertise with us'/>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
                 <div class="wrap">
                     @for($i = 0; $i < 8; $i++)
                     <section class='my-4'>
-                        <img src="{{ asset('img/cubao.jpg') }}" />
+                        <img src="{{ asset('img/cubao.jpg') }}" alt='Cubao Station' title='Cubao Station'/>
                         <span class="loc">Cubao Station</span>
                         <span class="title">Walkway</span>
                         <span class="details">Northbound Size: W" H" <br /> Vicinity: Farmer's Market, Alimall, Araneta <br /> Coliseum, Gateway Mall</span>

@@ -64,15 +64,15 @@
             </div>
 
             <section>
-                <img src="{{ asset('img/1.jpg') }}">
+                <img src="{{ asset('img/1.jpg') }}" alt='Traditional Billboards' title='Traditional Billboards'/>
                 <h4 class="py-4">Traditional Billboards</h4>
             </section>
             <section>
-                <img src="{{ asset('img/5.jpg') }}">
+                <img src="{{ asset('img/5.jpg') }}" alt='Digital Billboards' title='Digital Billboards'/>
                 <h4 class="py-4">Digital Billboards</h4>
             </section>
             <section>
-                <img src="{{ asset('img/3.jpg') }}">
+                <img src="{{ asset('img/3.jpg') }}" alt='Turnstiles & Trains' title='Turnstiles & Trains'>
                 <h4 class="py-4">Turnstiles & Trains</h4>
             </section>
 
@@ -83,7 +83,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-6">
-                <img src="{{ asset('img/edsa-traffic-ber-months-situation-1566985698.jpg') }}" class="img-fluid" />
+                <img src="{{ asset('img/edsa-traffic-ber-months-situation-1566985698.jpg') }}" class="img-fluid"  alt='EDSA' title='EDSA'/>
             </div>
             <div class="col-6 py-5 my-3">
                 <h4>Out-of-Home advertising <br /> is the future.</h4>
