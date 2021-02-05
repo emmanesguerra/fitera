@@ -2053,13 +2053,13 @@ __webpack_require__.r(__webpack_exports__);
   props: ['data', 'counter', 'initialcnt'],
   computed: {
     imgpath: function imgpath() {
-      return '/img/' + this.data.img;
+      return this.data.imgpath + '/' + this.data.img;
     },
     url: function url() {
       if (this.initialcnt == 5) {
-        return '/properties/digital-billboards/' + this.data.url;
+        return this.data.path + '/' + this.data.url;
       } else {
-        return '/properties/traditional-billboards/' + this.data.url;
+        return this.data.path + '/' + this.data.url;
       }
     }
   }
@@ -50196,7 +50196,9 @@ if ($('#app').length) {
         vicinity: "Farmer's Market, Alimall, Araneta Coliseum, Gateway Mall",
         details: "Farmer's Market, Alimall, Araneta Coliseum, Gateway Mall, Farmer's Market, Alimall, Araneta Coliseum, Gateway Mall",
         url: 'roof-deck',
-        img: 'edsa-station-pasay.jpg'
+        path: urlpath,
+        img: 'edsa-station-pasay.jpg',
+        imgpath: imagepath
       },
       listcounter: listcounter
     },

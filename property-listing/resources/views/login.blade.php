@@ -26,7 +26,7 @@
                         </label>
                     </div>
                     <div class="col-5">
-                        <button class="btn btn-primary btn-sm" type="submit">LOG IN</button>
+                        <a href="{{ url('/') }}" class="btn btn-primary btn-sm" type="submit">LOG IN</a>
                     </div>
                 </div>
             </form>

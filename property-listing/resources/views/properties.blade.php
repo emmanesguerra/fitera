@@ -9,7 +9,7 @@
             <div class='categ col-3'>
                 <ul>
                     @foreach($data as $category)
-                    <li><a href='/properties/{{ $category['url'] }}'>{{ $category['name'] }}</a></li>
+                    <li><a href='{{ url('/properties/' . $category['url']) }}'>{{ $category['name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>

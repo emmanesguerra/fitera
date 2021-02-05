@@ -4,8 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-3 px-0">
-                <div class="logo">
-                </div>
+                <a href="{{ url('/') }}" class="logo"></a>
             </div>
             <div class="col-9 px-0">
                 <div class="top align-right ">

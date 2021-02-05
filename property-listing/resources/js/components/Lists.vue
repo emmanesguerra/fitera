@@ -24,13 +24,13 @@
         props: ['data', 'counter', 'initialcnt'],
         computed: {
             imgpath() {
-                return '/img/' + this.data.img;
+                return this.data.imgpath + '/' + this.data.img;
             },
             url () {
                 if(this.initialcnt == 5) {
-                    return '/properties/digital-billboards/' + this.data.url;
+                    return this.data.path + '/' + this.data.url;
                 } else {
-                    return '/properties/traditional-billboards/' + this.data.url;
+                    return this.data.path + '/' + this.data.url;
                 }
             }
         },

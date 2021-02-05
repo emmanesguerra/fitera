@@ -44,4 +44,12 @@
 
 <script>
     var listcounter = {{ $count }};
+    var imagepath = "{{ asset('img/') }}";
+    
+    @if($count == 5) 
+    var urlpath = "{{ url('properties/digital-billboards') }}";
+    @else
+    var urlpath = "{{ url('properties/traditional-billboards') }}";
+    @endif
+    
 </script>

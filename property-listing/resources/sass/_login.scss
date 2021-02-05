@@ -41,6 +41,12 @@ and open the template in the editor.
     a {
         color: #00b8ff;
         font-size: 9px;
+        
+        &.btn {
+            color: #fff;
+            padding: 7px 0;
+            font-size: 13px;
+        }
     }
     
     input {

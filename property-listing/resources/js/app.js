@@ -73,7 +73,9 @@ if ($('#app').length) {
                 vicinity: "Farmer's Market, Alimall, Araneta Coliseum, Gateway Mall",
                 details: "Farmer's Market, Alimall, Araneta Coliseum, Gateway Mall, Farmer's Market, Alimall, Araneta Coliseum, Gateway Mall",
                 url: 'roof-deck',
-                img: 'edsa-station-pasay.jpg'
+                path: urlpath,
+                img: 'edsa-station-pasay.jpg',
+                imgpath: imagepath
             },
             listcounter: listcounter
         },
