@@ -1,4 +1,5 @@
 @include('nav.header')
+@include('nav.navigation')
 
 @include('common.search-temp')
 

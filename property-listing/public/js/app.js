@@ -37912,7 +37912,14 @@ var render = function() {
     _vm._l(_vm.counter, function(index) {
       return _c("section", { key: index, staticClass: "row mx-0" }, [
         _c("div", { staticClass: "col-4 px-0" }, [
-          _c("img", { staticClass: "img-fluid", attrs: { src: _vm.imgpath } })
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: {
+              src: _vm.imgpath,
+              alt: _vm.data.title,
+              title: _vm.data.title
+            }
+          })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-5 p-4" }, [

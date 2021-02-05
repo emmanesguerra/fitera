@@ -1,4 +1,5 @@
 @include('nav.header')
+@include('nav.navigation')
 
 <div class="banner">
     <div class="container">
